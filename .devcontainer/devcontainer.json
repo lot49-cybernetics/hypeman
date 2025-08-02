@@ -1,6 +1,12 @@
 {
     "name": "hypeman",
     "image": "ghcr.io/lot49-cybernetics/lot49-base-deploy:noble",
+    "runArgs": [
+        "--network=host"
+    ],
+    "features": {
+        "ghcr.io/devcontainer-community/devcontainer-features/bun.sh:1": {}
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -10,6 +16,8 @@
                 "davidanson.vscode-markdownlint",
                 "donjayamanne.githistory",
                 "eamodio.gitlens",
+                "ecmel.vscode-html-css",
+                "eslint.vscode-eslint",
                 "foxundermoon.shell-format",
                 "github.copilot",
                 "github.remotehub",
@@ -20,14 +28,16 @@
                 "ionutvmi.path-autocomplete",
                 "mads-hartmann.bash-ide-vscode",
                 "mattiasbaake.vscode-snippets-for-ansible",
+                "mgmcdermott.vscode-language-babel",
                 "ms-azuretools.vscode-docker",
                 "ms-kubernetes-tools.vscode-kubernetes-tools",
                 "narasimapandiyan.jetbrainsmono",
                 "oderwat.indent-rainbow",
-                "pjmiravalle.terraform-advanced-syntax-highlighting",
+                "opentofu.vscode-opentofu",
                 "shd101wyy.markdown-preview-enhanced",
                 "stuart.unique-window-colors",
                 "styled-components.vscode-styled-components",
+                "tailwindcss.tailwindcss-intellisense",
                 "tamasfe.even-better-toml",
                 "vscode-icons-team.vscode-icons",
                 "waderyan.gitblame"
