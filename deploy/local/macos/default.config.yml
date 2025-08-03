@@ -1,0 +1,48 @@
+---
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - 'App Store'
+dockitems_persist:
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app/"
+    pos: 1
+
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 2
+
+  - name: Screenshot
+    path: /System/Applications/Utilities/Screenshot.app/
+    pos: 3
+  
+  - name: "System Settings"
+    path: "/System/Applications/System Settings.app/"
+    pos: 4
+
+  - name: Terminal
+    path: /System/Applications/Utilities/Terminal.app/
+    pos: 5
+
+homebrew_installed_packages:
+  - colima
+  - docker
+  - docker-buildx
+  - docker-completion
+  - docker-compose
+  - docker-credential-helper
+  - dockutil
+  - gh
+  - git
+  - kubernetes-cli
+  - qemu
+  - siderolabs/tap/talosctl
+  - wget
+
+homebrew_cask_apps:
+  - git-credential-manager
+  - google-chrome
+  - iterm2
+  - visual-studio-code

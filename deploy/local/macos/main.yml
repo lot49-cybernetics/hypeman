@@ -1,0 +1,17 @@
+---
+- name: Configure host.
+  hosts: all
+
+  environment:
+    - PATH: "/usr/local/bin:/usr/local/sbin:/opt/homebrew/bin:{{ ansible_env.PATH }}"
+
+  vars_files:
+    - default.config.yml
+
+  roles:
+    - role: elliotweiser.osx-command-line-tools
+    - role: geerlingguy.mac.homebrew
+      tags: ['homebrew']
+    - role: geerlingguy.mac.dock
+      when: configure_dock
+      tags: ['dock']
